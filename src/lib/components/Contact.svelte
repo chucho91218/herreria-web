@@ -21,14 +21,14 @@
 					<Phone class="w-6 h-6" />
 				</div>
 				<h3 class="text-white font-bold uppercase tracking-wider mb-2">Teléfono</h3>
-				<p class="text-forge-muted">+54 9 3573 12-3456</p> </div>
+				<p class="text-forge-muted">+54 9 3573 410377</p> </div>
 
 			<div class="bg-[#151515] border border-white/10 rounded-lg p-10 text-center hover:border-forge-orange transition-colors group">
 				<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-forge-orange/10 text-forge-orange mb-6 group-hover:bg-forge-orange group-hover:text-white transition-all">
 					<Mail class="w-6 h-6" />
 				</div>
 				<h3 class="text-white font-bold uppercase tracking-wider mb-2">Email</h3>
-				<p class="text-forge-muted">contacto@forjamaestra.com</p>
+				<p class="text-forge-muted">martinluque80@gmail.com</p>
 			</div>
 
 			<div class="bg-[#151515] border border-white/10 rounded-lg p-10 text-center hover:border-forge-orange transition-colors group">

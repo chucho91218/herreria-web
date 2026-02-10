@@ -1,23 +1,28 @@
 <script lang="ts">
-	import { Hammer, Wrench, Settings } from 'lucide-svelte';
+	import { Toolbox, Ruler, Fence, Van } from 'lucide-svelte';
 	import { reveal } from '$lib/actions/reveal';
 
 	// ESTE ES EL ARRAY QUE FALTABA
 	const services = [
 		{
-			title: 'PUERTAS Y PORTONES',
-			desc: 'Diseños exclusivos de puertas y portones en hierro forjado que combinan seguridad con elegancia arquitectónica.',
-			icon: Hammer
+			title: 'Servicio integral de herrería.',
+			desc: 'Fabricamos y montamos estructuras metálicas, rejas, barandas, escaleras y más. Desarrollamos proyectos a medida, combinando resistencia, seguridad y un acabado prolijo para cada espacio.',
+			icon: Toolbox
 		},
 		{
-			title: 'REJAS Y BARANDALES',
-			desc: 'Protección y belleza para tu hogar con rejas decorativas y barandales que realzan cualquier espacio.',
-			icon: Wrench
+			title: 'Diseño y fabricación a medida.',
+			desc: 'Desarrollamos soluciones personalizadas según tu estilo y necesidades. Desde la idea inicial y el diseño hasta la construcción final, cada trabajo se realiza con atención al detalle.',
+			icon: Ruler
 		},
 		{
-			title: 'MOBILIARIO ARTESANAL',
-			desc: 'Muebles únicos forjados a mano: mesas, sillas, lámparas y decoraciones que transforman ambientes.',
-			icon: Settings
+			title: 'Muebles industriales personalizados.',
+			desc: 'Construimos mesas, escritorios, estanterías y más, combinando hierro y madera para lograr un diseño moderno, resistente y de larga duración.',
+			icon: Fence
+		},
+		{
+			title: 'Entrega e instalación.',
+			desc: 'Realizamos el traslado y la colocación de cada trabajo, asegurando una instalación precisa, firme y segura.',
+			icon: Van
 		}
 	];
 </script>
@@ -30,7 +35,7 @@
 				NUESTROS <span class="text-forge-orange">SERVICIOS</span>
 			</h2>
 			<p class="text-forge-muted max-w-2xl mx-auto text-lg">
-				Ofrecemos soluciones integrales en herrería artesanal, desde el diseño hasta la instalación final.
+				Contamos con diferentes servicios para cada necesidad.
 			</p>
 		</div>
 
