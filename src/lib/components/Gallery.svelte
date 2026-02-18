@@ -2,13 +2,13 @@
     import { X, ExternalLink } from 'lucide-svelte';
     import { fade, fly } from 'svelte/transition';
 
-    // Datos de los proyectos con TUS FOTOS LOCALES
+    // Datos de los proyectos
     const projects = [
         {
             title: 'PUERTAS Y PORTONES',
             desc: 'Seguridad y elegancia en cada entrada.',
             details: 'Nuestras puertas y portones combinan la robustez del hierro forjado con diseños arquitectónicos que realzan la fachada de tu hogar. Ofrecemos sistemas manuales y automatizados.',
-            img: '/fotos/puerta.png',
+            img: '/fotos/puertaaa.png', // Mantuve tu nombre de archivo original
             subGallery: [
                 '/fotos/puerta1.png',
                 '/fotos/puerta2.png',
@@ -33,7 +33,7 @@
         {
             title: 'BARANDALES Y ESCALERAS',
             desc: 'Estructuras firmes con acabados finos.',
-            details: 'Transformamos escaleras y balcones en obras de arte. Nuestros barandales forjados a mano combinan seguridad estructural con delicadeza visual.',
+            details: 'Fabricamos escaleras y barandas a medida para interiores y exteriores. Combinamos diseño, resistencia y funcionalidad para que subas con confianza.',
             img: '/fotos/barandal.png',
             subGallery: [
                 '/fotos/barandal1.png',
@@ -46,7 +46,7 @@
         {
             title: 'MOBILIARIO ARTESANAL',
             desc: 'Piezas únicas para interiores industriales.',
-            details: 'Muebles únicos que cuentan historias. Desde mesas y sillas hasta lámparas y decoraciones, cada pieza es forjada a mano para durar toda la vida.',
+            details: 'Fabricamos muebles que combinan hierro con madera, vidrio o chapa. Diseños originales pensados para durar y destacar en tu hogar o local.',
             img: '/fotos/mobiliario.png',
             subGallery: [
                 '/fotos/mobiliario1.png',
@@ -57,9 +57,9 @@
             ]
         },
         {
-            title: 'PROCESO DE FORJA',
+            title: 'OTROS TRABAJOS',
             desc: 'El arte del fuego y el martillo en acción.',
-            details: 'Conoce el arte detrás de cada creación. Utilizamos técnicas tradicionales combinadas con herramientas modernas para lograr acabados perfectos.',
+            details: 'Hacemos todo tipo de trabajos especiales en hierro: pérgolas, techos, cobertizos, barandas, estructuras y más. Creatividad y calidad en cada encargo.',
             img: '/fotos/forja.png',
             subGallery: [
                 '/fotos/forja1.png',
@@ -69,7 +69,6 @@
                 '/fotos/forja5.png'
             ]
         },
-        
     ];
 
     let selectedProject: any = null;
@@ -90,7 +89,6 @@
         }
     }
 
-    // Función inteligente para cerrar solo si clicas el fondo negro
     function handleBackdropClick(e: MouseEvent) {
         if (e.target === e.currentTarget) {
             closeModal();
@@ -112,11 +110,11 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex flex-wrap justify-center gap-6">
             {#each projects as item}
                 <button 
                     on:click={() => openModal(item)}
-                    class="group relative h-80 w-full overflow-hidden rounded-xl cursor-pointer shadow-lg border border-white/10 text-left focus:outline-none focus:ring-2 focus:ring-forge-orange"
+                    class="group relative h-80 w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] overflow-hidden rounded-xl cursor-pointer shadow-lg border border-white/10 text-left focus:outline-none focus:ring-2 focus:ring-forge-orange"
                 >
                     <img 
                         src={item.img} 
